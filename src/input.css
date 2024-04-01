@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Inter:wght@100;200;300;400;500;600;700&family=Roboto+Slab:wght@200&display=swap');
+
+.navbar-fixed{
+    @apply  fixed z-[9999] bg-black bg-opacity-75 ;
+    backdrop-filter: blur(5px);
+}
+
+@layer components {
+    .hover-card-one {
+       @apply absolute hover:scale-125 transition-all duration-500;
+    }
+
+    .card-preferred-destinations{
+        @apply h-80 w-60 rounded-lg overflow-hidden relative;
+    }
+
+    .card-travel-inspiration{
+        @apply w-72 h-72 rounded-xl overflow-hidden relative;
+    }
+
+    .card-guid{
+        @apply flex h-64 border-[3px] rounded-lg border-slate-300  p-1 w-[86%] mt-16 relative;
+    }
+
+    .img-guid{
+        @apply bg-cover bg-center h-[244px] w-72 rounded-lg;
+    }
+}
